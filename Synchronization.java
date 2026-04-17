@@ -1,7 +1,7 @@
 class Bank
 {
     int balance=1000;
-    void withdraw(int amount)
+    synchronized void withdraw(int amount)
     {
         if(amount<=balance)
         {
